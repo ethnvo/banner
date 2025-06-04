@@ -1,0 +1,44 @@
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.bg-jigsaw {
+  /* Jigsaw pattern with white lines at 50% opacity */
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.5' fill-rule='evenodd'%3E%3Cpath d='M10 0a2 2 0 1 1-4 0H0v6.015A4 4 0 0 1 0 14v6h6.015a4 4 0 1 1 7.97 0H20v-6.015a4 4 0 1 1 0-7.97V0h-6.015A4 4 0 0 1 10 0zM2 8a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm16 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM10 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 150px 150px; /* adjust tile size as needed */
+  opacity: 0.01; /* overall layer opacity (tweak between 0.05–0.2) */
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
