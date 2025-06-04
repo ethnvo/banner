@@ -59,7 +59,7 @@ to-indigo-300
 
         {/* Tagline */}
         <p className="text-3xl italic font-zain text-blue-100 -mt-2 mb-12 tracking-tight pl-1 z-20">
-          go beyond.
+          piece by piece.
         </p>
 
         {/* Role */}
