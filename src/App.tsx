@@ -58,8 +58,8 @@ to-indigo-300
         </div>
 
         {/* Tagline */}
-        <p className="text-3xl italic font-zain text-blue-100 -mt-2 mb-12 tracking-tight pl-1 z-20">
-          piece it together, together.
+        <p className="text-[1.70rem] italic font-zain text-blue-100 -mt-2 mb-12 tracking-tight pl-1 z-20">
+          Let's piece it together, together.
         </p>
 
         {/* Role */}
