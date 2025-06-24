@@ -48,6 +48,8 @@
 }
 
 #banner::before {
+  margin-left: 39;
+  margin-top: 28;
   content: "";
   position: absolute;
   inset: 0;

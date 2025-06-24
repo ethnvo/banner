@@ -30,7 +30,7 @@ bg-gradient-to-br from-white/10 via-slate-800/10 to-white/5
         "
       >
         {/* Jigsaw pattern */}
-        <div className="absolute inset-0 bg-[url('/jigsaw.svg')] bg-repeat bg-[length:150px_150px] opacity-10 z-0 pointer-events-none" />
+        <div className="absolute inset-0 bg-[url('/jigsaw.svg')] bg-repeat ml-[38px] mt-7 bg-[length:150px_150px] opacity-10 z-0 pointer-events-none" />
 
         {/* Content Block */}
         <div className="pl-[600px] pr-[50px] overflow-visible">
@@ -68,7 +68,7 @@ bg-gradient-to-br from-white/10 via-slate-800/10 to-white/5
     text-[2.6rem] italic font-light 
     text-right mr-[50px] mb-[30px] 
     -mt-12
-    bg-gradient-to-tl  from-slate-100 to-slate-100
+    bg-gradient-to-b  to-pink-200 from-yellow-300
     bg-clip-text text-transparent tracking-tight
   "
           >
