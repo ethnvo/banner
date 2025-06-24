@@ -21,54 +21,60 @@ function App() {
       <div
         id="banner"
         className="
-          w-[1584px] h-[396px]
-          flex flex-col items-end justify-center
+          w-[1584px] min-h-[500px]
+          flex flex-col items-start justify-center
           pr-10 text-white relative
-          bg-gradient-to-r from-slate-900 via-slate-950 to-blue-950
-          overflow-hidden
+bg-gradient-to-br from-white/10 via-slate-800/10 to-white/5
+
+          overflow-visible
         "
       >
         {/* Jigsaw pattern */}
         <div className="absolute inset-0 bg-[url('/jigsaw.svg')] bg-repeat bg-[length:150px_150px] opacity-10 z-0 pointer-events-none" />
 
-        {/* Blue blur blob */}
-        <div
-          className="
-            absolute w-[500px] h-[400px]
-            rounded-full bg-blue-800 opacity-20 blur-[1200px]
-            top-[0%] right-[0%] z- pointer-events-none
-          "
-        />
+        {/* Content Block */}
+        <div className="pl-[600px] pr-[50px] overflow-visible">
+          {/* Name with gradient stroke */}
+          <div className="relative w-fit mb-[10px]">
+            {/* Stroke layer */}
+            <span
+              className="
+                absolute inset-0
+                text-[180px] font-thin tracking-tighter font-zain 
+                bg-gradient-to-br from-rose-600 via-pink-100 to-yellow-200
+                bg-clip-text text-transparent
+                stroke-text blur-[2.2px]
+                z-0
+              "
+              aria-hidden="true"
+            >
+              ethanvo.dev
+            </span>
 
-        {/* Name with glow */}
-        <div className="relative inline-block -mt-6 mb-4 z-20">
-          <span
-            className=" 
-            font-zain
-              relative text-8xl font-bold 
-bg-gradient-to-l
-from-sky-200
-via-blue-100
-to-indigo-300
-              bg-clip-text text-transparent
-            "
+            {/* Fill layer */}
+            <span
+              className="
+                relative text-[180px] font-thin tracking-tighter font-zain
+                text-[#0E0E0F]	 z-10
+              "
+            >
+              ethanvo.dev<span className="opacity-0">.</span>
+            </span>
+          </div>
+
+          {/* Tagline */}
+          <p
+            className="
+    text-[2.6rem] italic font-light 
+    text-right mr-[50px] mb-[30px] 
+    -mt-12
+    bg-gradient-to-tl  from-slate-100 to-slate-100
+    bg-clip-text text-transparent tracking-tight
+  "
           >
-            Ethan Vo
-          </span>
+            let's piece it together, together.
+          </p>
         </div>
-
-        {/* Tagline */}
-        <p className="text-[1.70rem] italic font-zain text-blue-100 -mt-2 mb-12 tracking-tight pl-1 z-20">
-          Let's piece it together, together.
-        </p>
-
-        {/* Role */}
-        <h2 className="text-4xl font-zain mt-20 z-20">
-          <span className="bg-gradient-to-l from-sky-200 via-blue-100 to-indigo-200 bg-clip-text text-transparent">
-            <span className="font-thin">Fullstack Developer</span> |{" "}
-            <span className="font-semibold">ethanvo.dev</span>
-          </span>
-        </h2>
       </div>
 
       {/* Export Button */}
