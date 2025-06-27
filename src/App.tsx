@@ -41,7 +41,7 @@ bg-gradient-to-br from-white/10 via-slate-800/10 to-white/5
               className="
                 absolute inset-0
                 text-[180px] font-thin tracking-tighter font-zain 
-                bg-gradient-to-br from-rose-600 via-pink-100 to-yellow-200
+                bg-gradient-to-br from-blue-500 via-pink-300 to-orange-200
                 bg-clip-text text-transparent
                 stroke-text blur-[2.2px]
                 z-0
@@ -68,7 +68,7 @@ bg-gradient-to-br from-white/10 via-slate-800/10 to-white/5
     text-[2.6rem] italic font-light 
     text-right mr-[50px] mb-[30px] 
     -mt-12
-    bg-gradient-to-b  to-pink-200 from-yellow-300
+    bg-gradient-to-b  to-pink-200 from-blue-300
     bg-clip-text text-transparent tracking-tight
   "
           >
