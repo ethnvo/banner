@@ -1,5 +1,5 @@
 import "./App.css";
-import { toJpeg } from "html-to-image";
+import { toPng } from "html-to-image";
 import download from "downloadjs";
 
 function App() {
@@ -7,9 +7,9 @@ function App() {
     const node = document.getElementById("banner");
     if (!node) return;
 
-    toJpeg(node, { quality: 0.95 })
+    toPng(node, { quality: 0.95 })
       .then((dataUrl) => {
-        download(dataUrl, "ethanvo-banner.jpg");
+        download(dataUrl, "ethanvo-banner.png");
       })
       .catch((err) => {
         console.error("Export failed", err);
@@ -24,7 +24,7 @@ function App() {
           w-[1584px] min-h-[500px]
           flex flex-col items-start justify-center
           pr-10 text-white relative
-bg-gradient-to-br from-white/10 via-slate-800/10 to-white/5
+          bg-black bg-gradient-to-l from-purple-500/5 via-slate-800/10 to-black/10
 
           overflow-visible
         "
@@ -41,9 +41,9 @@ bg-gradient-to-br from-white/10 via-slate-800/10 to-white/5
               className="
                 absolute inset-0
                 text-[180px] font-thin tracking-tighter font-zain 
-                bg-gradient-to-br from-blue-500 via-pink-300 to-orange-200
+                bg-gradient-to-br from-blue-500/80 via-pink-300/80 to-orange-200/80
                 bg-clip-text text-transparent
-                stroke-text blur-[2.2px]
+                stroke-text blur-[6px]
                 z-0
               "
               aria-hidden="true"
@@ -68,7 +68,7 @@ bg-gradient-to-br from-white/10 via-slate-800/10 to-white/5
     text-[2.6rem] italic font-light 
     text-right mr-[50px] mb-[30px] 
     -mt-12
-    bg-gradient-to-b  to-pink-200 from-blue-300
+    bg-gradient-to-b from-blue-500/80 via-pink-300/80 to-orange-200/80
     bg-clip-text text-transparent tracking-tight
   "
           >
@@ -83,7 +83,7 @@ bg-gradient-to-br from-white/10 via-slate-800/10 to-white/5
           onClick={exportBanner}
           className="px-6 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-600 transition-all"
         >
-          Download as JPG
+          Download as PNG
         </button>
       </div>
     </>
